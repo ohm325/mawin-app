@@ -16,6 +16,6 @@ export class WaitPage implements OnInit {
   ngOnInit() {
   }
   waitClick(){
-    this.nav.navigateForward("/detailbike");
+    this.nav.navigateForward("/detail-bike");
   }
 }
