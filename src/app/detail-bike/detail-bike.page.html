@@ -7,20 +7,18 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
-<ion-item padding>
-
-      <ion-avatar style="width:100% !important; height : 100% !important; max-width: 150px !important;max-height: 150px">
-          <img style="text-align: center" [src]="bike_detail[0].image" />
+<ion-content padding="slot">
+    
+    <ion-avatar style=" margin: auto; width:100% !important; height : 100% !important; max-width: 130px !important;max-height: 130px">
+          <img style="align-items: center;" [src]="bike_detail[0].image" />
       </ion-avatar>
-</ion-item>
+      
+
 
 <ion-item>
     <ion-label padding>{{ bike_detail[0].name }}</ion-label>
-  
-      
-    <p><ion-label padding>{{ bike_detail[0].name }}</ion-label></p>
+
+    <ion-label padding>{{ bike_detail[0].plate }}</ion-label>
 </ion-item>
 
 </ion-content>
