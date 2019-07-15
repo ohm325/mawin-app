@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BikeContractService } from '../service/bike-contract.service';
 
 @Component({
   selector: 'app-detail-bike',
@@ -7,14 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailBikePage implements OnInit {
 
-  constructor() { }
+  constructor(private BikeontractService:BikeContractService) { }
+
   bike_detail = [
-    {name:'ต้น',phone:'11111-11111',email:'ton@mail.com',image:'images/assets/01.jpg',plate:'142กทม',bike:'CBR 650F'}
+  {name:'ตะวัน สุวรรณหงษ์',phone:'11111-11111',email:'ton@mail.com',image:'/assets/02.jpg',plate:'142กทม',bike:'CBR 650F'}
   ];
 
   ngOnInit() {
     
-    
+    //let bikecontract = this.BikeontractService.selectbikecontract;
+      console.log(this.bike_detail);
+
 
   }
 

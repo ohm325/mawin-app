@@ -7,16 +7,18 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
-<ion-item padding = "block">
-
-  <ion-card>
-      <ion-avatar >
-          <img style="text-align: center" [src]="accountInfo.image" />
+<ion-content padding="slot">
+    
+    <ion-avatar style=" margin: auto; width:100% !important; height : 100% !important; max-width: 130px !important;max-height: 130px">
+          <img style="align-items: center;" [src]="bike_detail[0].image" />
       </ion-avatar>
-  </ion-card>
+      
 
+
+<ion-item>
+    <ion-label padding>{{ bike_detail[0].name }}</ion-label>
+
+    <ion-label padding>{{ bike_detail[0].plate }}</ion-label>
 </ion-item>
 
 </ion-content>
